@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import CreateReport from './components/CreateReport';
-import ReportDashboard from './components/ReportDashboard';
+import AddStudent from './components/AddStudent';
+import Students from './components/Students';
 
 function App() {
 
@@ -12,14 +11,11 @@ function App() {
       <h2 style={{ textAlign: "center" }}>Welcome to React App</h2>
       <Router >
         <Navbar />
-        <Route path="/" exact>
-          <Home />
+        <Route path="/addstudent">
+          <AddStudent />
         </Route>
-        <Route path="/reports">
-          <CreateReport />
-        </Route>
-        <Route path="/reportdashboard">
-          <ReportDashboard />
+        <Route path="/students">
+          <Students />
         </Route>
       </Router>
     </div>

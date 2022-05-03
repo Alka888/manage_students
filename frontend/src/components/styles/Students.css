@@ -1,0 +1,27 @@
+.container {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: 450;
+    position: relative;
+}
+
+.btn-update {
+    position: absolute;
+    right: 30px;
+    top: 90px;
+    width: 10%;
+    background: black;
+    color: white;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 10%;
+    background: black;
+    color: white;
+}
